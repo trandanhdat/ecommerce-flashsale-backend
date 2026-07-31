@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace>ecommerce_flashsale_backend.Application</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\ecommerce-flashsale-backend.Domain\ecommerce-flashsale-backend.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Debug\net9.0\" />
+    <Folder Include="bin\Release\net9.0\" />
+    <Folder Include="Common\Behaviors\" />
+    <Folder Include="Common\Mappers\" />
+    <Folder Include="Features\FlashSales\Commands\" />
+    <Folder Include="Features\FlashSales\Queries\" />
+    <Folder Include="obj\Debug\net9.0\refint\" />
+    <Folder Include="obj\Debug\net9.0\ref\" />
+    <Folder Include="obj\Release\net9.0\refint\" />
+    <Folder Include="obj\Release\net9.0\ref\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="obj\Debug\net9.0\ecommerce-flashsale-backend.Application.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net9.0\ecommerce-flashsale-backend.Application.assets.cache" />
+    <None Include="obj\Debug\net9.0\ecommerce-flashsale-backend.Application.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\net9.0\ecommerce-flashsale-backend.Application.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\ecommerce-flashsale-backend.Application.csproj.nuget.g.props" />
+    <None Include="obj\ecommerce-flashsale-backend.Application.csproj.nuget.g.targets" />
+    <None Include="obj\project.nuget.cache" />
+    <None Include="obj\Release\net9.0\ecommerce-flashsale-backend.Application.AssemblyInfoInputs.cache" />
+    <None Include="obj\Release\net9.0\ecommerce-flashsale-backend.Application.assets.cache" />
+    <None Include="obj\Release\net9.0\ecommerce-flashsale-backend.Application.GeneratedMSBuildEditorConfig.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="16.2.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1" />
+    <PackageReference Include="MediatR" Version="14.2.0" />
+  </ItemGroup>
+
+</Project>
