@@ -28,7 +28,11 @@ namespace ecommerce_flashsale_backend.Controllers
             var result = await _authService.RegisterAsync(request);
             return StatusCode(201, result);
         }
-
+        /// <summary>
+        /// Đăng nhập vào hệ thống.
+        /// </summary>
+        /// <param name="request">Thông tin đăng nhập.</param>
+        /// <returns>Thông tin người dùng và token.</returns>
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginRequestDto request)
         {
